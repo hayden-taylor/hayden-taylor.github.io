@@ -5,7 +5,7 @@ lang: en
 # For a custom domain (e.g. https://www.haydentaylor.org) leave baseurl empty.
 # For a project site at https://<user>.github.io/<repo>/ set baseurl: "/<repo>".
 url: ""
-baseurl: "/hkt-website"
+baseurl: ""
 markdown: kramdown
 exclude:
   - README.md

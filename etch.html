@@ -1,8 +1,8 @@
 ---
 layout: project
-title: "Design for Nanoanufacturing: Modeling of deep silicon plasma etch"
+title: "Design for Emerging and Nanoscale Manufacturing: Modeling of deep silicon plasma etch"
 description: "Modeling of deep silicon plasma etch"
-panel_title: "Research"
+panel_title: "Modeling of deep<br>silicon plasma etch"
 banner:
   - {type: img, src: "images/hkt_research_image_19.jpg", width: 240, height: 240}
   - {type: img, src: "images/hkt_research_image_22.jpg", width: 240, height: 240}
@@ -10,41 +10,11 @@ banner:
 ---
 
 <h2>Modeling of deep silicon plasma etch</h2>
-<p>Deep Reactive Ion Etching (DRIE) has in recent years become a dominant
-		  technique for the prototyping and manufacture of silicon
-		  micro-electro-mechanical systems (MEMS). With the maturing of DRIE and the
-		  denser packing of devices on to wafers has come a need to understand and
-		  control spatial variations of the etch rate. In addition to well-known
-		  feature size or aspect ratio-dependent etch (ARDE) non-uniformity, etch
-		  rate can vary between regions of the wafer, such that supposedly identical
-		  MEMS fabricated on that wafer may vary in performance or fail in use.
-		  Wafer-scale uniformity and inter- and intra-device consistency may be
-		  improved by changing conditions in the etching chamber, but this usually
-		  compromises etching speed and may accentuate ARDE.</p>
-<p>An alternative approach is to lay out the patterns being etched so that
-		  they compete for reactants in a controlled way. To this end, we have
-		  demonstrated a way of pre-characterizing any DRIE tool plus associated
-		  ‘recipes’ of operating parameters. Several test wafers are etched and
-		  measured, and simple data-fitting algorithms are run. The model
-		  constructed captures etch non-uniformity occurring over the diameter of a
-		  wafer, plus variations caused by the localization of patterns within the
-		  wafer. <a href="http://dx.doi.org/10.1149/1.2209570" rel="noopener" target="_blank"> Our technique</a> 
-		  has been shown to model etch rate variation across
-		  experimental wafers with fitting errors of less than 5% r.m.s. per wafer.</p>
-<p>Our model can then predict etch rates across a wafer for any mask design. 
-		  A prediction takes only a few seconds to compute using Matlab,
-		  and we envisage our prediction method being integrated into computer-aided
-		  MEMS design systems. Such systems could either guide engineers or
-		  automatically insert non-functional regions of etched silicon to perturb
-		  etch rates constructively.</p>
-<p>We are now engaged in a collaboration to define a standard DRIE test pattern
-		  and integrate ARDE models with our existing wafer- and die-scale
-		  simulation approach.</p>
-<p>In addition to pattern-dependent variations of etch rate, we have observed <a href="./pdf/Taylor_iMEMS_2006.pdf" rel="noopener" target="_blank">
-		  temporal variations</a> whereby the design of an etched pattern influences the
-		  rate and uniformity with which a subsequent wafer etches. Such
-		  ‘memory’ effects within the tool diminish over minutes, but could be
-		  important when using DRIE for production runs of many devices. We are
-		  applying existing test patterns to quantify these temporal variations and
-		  to understand exactly how fluxes of monatomic fluorine radicals and SxFy
-		  ions interact to determine DRIE rate and uniformity.</p>
+<p>Deep reactive ion etching (DRIE) became a dominant technique for prototyping and manufacturing silicon micro-electro-mechanical systems (MEMS). As DRIE matured and devices were packed more densely onto wafers, it became important to understand and control spatial variations of the etch rate. Besides the well-known feature-size or aspect-ratio-dependent etch (ARDE) non-uniformity, etch rate can vary between regions of the wafer, so that supposedly identical devices vary in performance or fail. Changing the chamber conditions can improve uniformity but usually compromises etching speed and may accentuate ARDE.</p>
+<p>An alternative is to lay out the patterns being etched so that they compete for reactants in a controlled way. We demonstrated a way of pre-characterizing any DRIE tool and its recipes: several test wafers are etched and measured, and simple data-fitting algorithms build a model that captures non-uniformity across the wafer diameter as well as variations caused by the local density of patterns. The model fitted etch-rate variation across experimental wafers with errors below 5% r.m.s. per wafer, and could then predict etch rates across a wafer for any mask design in a few seconds, making it suitable for integration into MEMS design tools that guide engineers or automatically insert non-functional etched regions to even out etch rates.</p>
+<p>We also observed temporal variations, in which the design of one etched pattern influences the rate and uniformity with which the next wafer etches. Such “memory” effects within the tool diminish over minutes but could matter in production runs of many devices.</p>
+<p><strong>Key publications</strong></p>
+<p>[<a href="publications.html#J1">J1</a>] <strong>H.K. Taylor</strong>, H. Sun, T.F. Hill, A. Farahanchi and D.S. Boning, “Characterizing and predicting spatial nonuniformity in the deep reactive ion etching of silicon”, <em>Journal of the Electrochemical Society</em>, vol. 153, pp. C575-C585, 2006. <a href="http://dx.doi.org/10.1149/1.2209570" rel="noopener" target="_blank">doi:10.1149/1.2209570</a></p>
+<p>[<a href="publications.html#C2">C2</a>] H. Sun, T.F. Hill, <strong>H.K. Taylor</strong>, M.A. Schmidt and D.S. Boning, “A two-level prediction model for deep reactive ion etch (DRIE)”, in <em>Proc. International Conference on Microelectromechanical Systems</em>, 2005, pp. 491-495. <a href="http://ieeexplore.ieee.org/search/wrapper.jsp?arnumber=1453974" rel="noopener" target="_blank">doi:10.1109/MEMSYS.2005.1453974</a></p>
+<p>[<a href="publications.html#C1">C1</a>] T.F. Hill, H. Sun, <strong>H.K. Taylor</strong>, M.A. Schmidt and D.S. Boning, “Pattern density-based prediction for deep reactive ion etch (DRIE)”, in <em>Proc. Solid-State Sensor, Actuator and Microsystems Workshop</em>, Hilton Head Island, SC, 2004. <a href="./pdf/Hill_Hilton_Head_2004.pdf" rel="noopener" target="_blank">paper .pdf</a></p>
+<p>[<a href="publications.html#NCb">NCb</a>] <strong>H.K. Taylor</strong>, “Tool- and pattern-dependent spatial variations in silicon deep reactive ion etching”, presented at <em>International MEMS Conference</em>, Singapore, May 2006. (invited) <a href="./pdf/Taylor_iMEMS_2006.pdf" rel="noopener" target="_blank">presentation .pdf</a></p>

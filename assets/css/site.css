@@ -1,7 +1,7 @@
 /* Design for Emerging and Nanoscale Manufacturing — accessible stylesheet (WCAG 2.1 AA).
    Colour pairs used (contrast vs. background):
    --blue #0E2E87 on white 12.4:1; white on --blue 12.4:1; --text #1a1a1a on white 17.4:1;
-   --muted #4d4d4d on white 8.5:1; white on tile overlay rgba(0,0,0,.72) >= 7.4:1 over any image;
+   --muted #4d4d4d on white 8.5:1; menu grey #6b6b6b 5.3:1; white on tile overlay rgba(0,0,0,.72) >= 7.4:1 over any image;
    focus ring --gold #FDB515 (3:1+ against both white and blue) plus dark inner outline. */
 :root {
   --blue: #0E2E87;
@@ -30,18 +30,22 @@ main:focus { outline: none; }
   display: grid; grid-template-columns: 240px minmax(0, 720px);
   grid-template-areas: "title banner" "nav main"; row-gap: 15px; }
 .page.no-banner { grid-template-areas: "title main" "nav main"; grid-template-rows: auto 1fr; }
-.titlepanel { grid-area: title; background: var(--blue); width: 240px; min-height: 240px; padding: 10px; }
+.titlepanel { grid-area: title; background: var(--blue); width: 240px; height: 240px; padding: 10px; overflow: hidden; }
 .panel-title { color: #fff; font-size: 1.25rem; line-height: 1.2; font-weight: bold; margin: 0; }
-.banner { grid-area: banner; display: flex; min-width: 0; overflow: hidden; }
-.banner img, .banner video { display: block; max-width: 100%; height: auto; flex: 0 1 auto; min-width: 0; }
+/* The banner is always exactly 720 x 240 (3:1). Each item's width is set as a fraction of 720 in the layout,
+   and images are cropped to fill their slot, so slightly mis-sized source images cannot shift the grid. */
+.banner { grid-area: banner; display: flex; width: 100%; aspect-ratio: 3 / 1; overflow: hidden; align-self: start; }
+.banner img, .banner video { display: block; flex: 0 0 auto; height: 100%; object-fit: cover; min-width: 0; }
 
 .sitenav { grid-area: nav; }
 .sitenav ul { list-style: none; margin: 0; padding: 0; }
 .sitenav li { margin: 0; }
-/* 24px line pitch keeps each menu link a 24px target (WCAG 2.2 target size) while staying compact */
-.sitenav a { display: inline-block; line-height: 24px; color: var(--muted); font-weight: bold; font-size: 1rem; text-decoration: none; }
-.sitenav a:hover { color: var(--blue); text-decoration: underline; }
-.sitenav a[aria-current="page"] { color: var(--blue); text-decoration: underline; text-decoration-thickness: 2px; }
+/* Menu as on the original site: 20px line pitch, no underlines. State is shown by shade:
+   default mid-grey #6b6b6b (5.3:1 on white), hover near-black #111, current page dark grey #2b2b2b.
+   The keyboard focus ring (gold + dark outline) is unchanged. */
+.sitenav a { display: inline-block; line-height: 20px; color: #6b6b6b; font-weight: bold; font-size: 1rem; text-decoration: none; }
+.sitenav a:hover { color: #111; }
+.sitenav a[aria-current="page"] { color: #2b2b2b; }
 
 main { grid-area: main; min-width: 0; }
 main h2 { color: var(--blue); font-size: 1.05rem; line-height: 1.25; margin: 1.2rem 0 .5rem; }
@@ -64,6 +68,33 @@ figcaption, .caption { font-size: .8rem; line-height: 1.3; color: var(--text); m
 .tile:hover .tile-caption, .tile:focus-visible .tile-caption { background: var(--blue); text-decoration: underline; }
 .tile:focus-visible { outline: 3px solid var(--gold); outline-offset: -3px; box-shadow: none; }
 
+/* Research page: one block per theme, three square images then a list of topics */
+.theme { margin: 0 0 22px; }
+.theme h2 { margin: 0 0 8px; }
+.theme-images { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin: 0 0 8px; }
+.theme-images a, .theme-images span { display: block; aspect-ratio: 1 / 1; overflow: hidden; }
+.theme-images img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.theme-images a:hover img { opacity: .85; }
+.theme-intro { margin: 0 0 .4em; }
+.topic-list { columns: 2; column-gap: 24px; margin: 0; padding-left: 1.1rem; }
+.topic-list li { break-inside: avoid; margin: 0 0 .25em; }
+
+/* Collapsible sections (People, Publications) */
+details.fold { margin: 0 0 .4rem; }
+details.fold > summary { cursor: pointer; list-style: none; color: var(--blue); font-weight: bold; font-size: 1.05rem; line-height: 1.25; padding: .35rem 0; }
+details.fold > summary::-webkit-details-marker { display: none; }
+details.fold > summary::before { content: "\25B8"; display: inline-block; width: 1.1em; transition: transform .15s; }
+details.fold[open] > summary::before { transform: rotate(90deg); }
+details.fold > summary h2 { display: inline; font-size: inherit; margin: 0; color: inherit; }
+details.fold > summary:hover { color: #000; }
+.fold-tools { margin: 0 0 .6rem; font-size: .85rem; }
+.fold-tools button { font: inherit; background: none; border: 1px solid #999; border-radius: 3px; padding: 2px 8px; margin-right: 6px; cursor: pointer; color: var(--text); }
+.fold-tools button:hover { background: #eee; }
+.people-list { margin: 0 0 .8em; padding-left: 1.1rem; }
+.people-list li { margin: 0 0 .15em; }
+.year-group { margin: 0 0 .5em; }
+.year-group h3 { font-size: .9rem; margin: .6em 0 .2em; color: var(--text); }
+
 /* Previous / next project links (in the page flow, not fixed, so they never cover text when zoomed) */
 .project-nav { display: flex; flex-wrap: wrap; gap: 12px; margin: 1.5rem 0 1rem; }
 .project-nav a { flex: 1 1 220px; background: var(--blue); color: #fff; text-decoration: none; padding: .6rem .9rem; font-weight: bold; }
@@ -77,10 +108,11 @@ code { font-size: .9em; }
 /* Reflow for narrow screens and high zoom (WCAG 1.4.10) */
 @media (max-width: 1000px) {
   .tiles { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+  .topic-list { columns: 1; }
 }
 @media (max-width: 760px) {
   .page, .page.no-banner { grid-template-columns: minmax(0, 1fr); grid-template-areas: "title" "banner" "nav" "main"; grid-template-rows: none; row-gap: 12px; }
-  .titlepanel { width: auto; min-height: 0; }
+  .titlepanel { width: auto; height: auto; }
   .sitenav ul { display: flex; flex-wrap: wrap; gap: 0 16px; }
   .tile-caption { inset: 20px; font-size: .9rem; }
 }

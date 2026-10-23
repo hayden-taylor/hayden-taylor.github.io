@@ -1,53 +1,43 @@
 Project title,Theme,Tagline,Source file,Thumbnail image,Include?
-Research theme: multiscale additive manufacturing,Multiscale additive manufacturing,"Tomographic AM, holographic AM, and applications of AM in construction",research-theme-additive.html,hkt_research_image_12.jpg,2
-Computed axial lithography (CAL),Multiscale additive manufacturing,Volumetric additive manufacturing via tomographic reconstruction,computed-axial-lithography.html,hkt_research_image_CAL_thinker.png,1
-Microscale CAL printing of silica glass,Multiscale additive manufacturing,,microCAL.html,hkt_research_image_uCAL_thumb.png,1
-Tomographic schlieren imaging for CAL,Multiscale additive manufacturing,,schlieren-for-CAL.html,hkt_research_image_schlieren_thumb.png,1
-CAL projection optimization,Multiscale additive manufacturing,Computed axial lithography as an inverse problem,CAL-algorithms.html,hkt_research_image_CALopt_thumb.jpg,1
-SpaceCAL: CAL in microgravity,Multiscale additive manufacturing,,spaceCAL.html,hkt_research_image_spaceCAL_thumbnail.png,1
-Controlling reaction heat in volumetric printing (RAFT),Multiscale additive manufacturing,RAFT polymerization for thermally stable CAL,RAFT-VAM.html,hkt_research_image_RAFT_thumb.jpg,1
-Holographic volumetric printing,Multiscale additive manufacturing,Multi-beam phase retrieval,holographic-VAM.html,hkt_research_image_holoVAM_thumb.jpg,1
-From pixels to voxels: mechanisms of volumetric printing,Multiscale additive manufacturing,,volumetric-printing-mechanisms.html,hkt_research_image_pixelsvoxels_thumb.jpg,1
-Materials for volumetric printing,Multiscale additive manufacturing,From hydrogels to glass,VAM-materials.html,hkt_research_image_VAMmaterials_thumb.jpg,1
-Scaling laws in additive manufacturing,Multiscale additive manufacturing,Build rate versus feature size,AM-scaling-laws.html,hkt_research_image_AMscaling_thumb.jpg,1
-CAL with low-modulus hydrogels,Multiscale additive manufacturing,,bioCAL.html,,0
-CAL for optical components,Multiscale additive manufacturing,,CAL-for-optics.html,,0
+Computed axial lithography (CAL),Volumetric additive manufacturing,Volumetric additive manufacturing via tomographic reconstruction,computed-axial-lithography.html,hkt_research_image_CAL_thinker.png,1
+Microscale CAL printing of silica glass,Volumetric additive manufacturing,Glass micro-optics and microfluidics,microCAL.html,hkt_research_image_uCAL_thumb.png,1
+Materials for volumetric printing,Volumetric additive manufacturing,From hydrogels to glass,VAM-materials.html,hkt_research_image_VAMmaterials_thumb.jpg,1
+Controlling reaction heat in volumetric printing (RAFT),Volumetric additive manufacturing,RAFT polymerization for thermally stable CAL,RAFT-VAM.html,hkt_research_image_RAFT_thumb.jpg,1
+Computational techniques for CAL,Volumetric additive manufacturing,Projection optimization and print-state metrology,CAL-algorithms.html,hkt_research_image_CALopt_thumb.jpg,1
+Tomographic schlieren imaging for CAL,Volumetric additive manufacturing,,schlieren-for-CAL.html,hkt_research_image_schlieren_thumb.png,1
+Multi-beam holographic volumetric printing,Volumetric additive manufacturing,Holographic and diffractive light shaping for 3D patterning,holographic-VAM.html,hkt_research_image_holoVAM_thumb.jpg,1
+SpaceCAL: CAL in microgravity,Volumetric additive manufacturing,,spaceCAL.html,hkt_research_image_spaceCAL_thumbnail.png,1
+OpenCAL: open-source CAL,Volumetric additive manufacturing,Open hardware and software for volumetric printing,OpenCAL.html,hkt_research_image_CAL4_open.png,1
+Additive manufacturing process landscape,Volumetric additive manufacturing,"Mechanisms, scaling laws and the place of volumetric printing",am-process-landscape.html,hkt_research_image_pixelsvoxels_thumb.jpg,1
+Octet-truss engineered concrete (OTEC),Materials for sustainable construction,Porous centimeter-scale lattices with high specific strength and stiffness,OTEC.html,hkt_research_image_OTEC_thumb.jpg,1
+Polymer lattice-reinforced concrete,Materials for sustainable construction,Architected polymer lattices for ductile concrete,polymer-lattice-concrete.html,hkt_research_image_latticeconcrete_thumb.jpg,1
+Polymer–PCM lattice concrete,Materials for sustainable construction,Printed lattices that reinforce concrete and store heat,PCM-lattice-concrete.html,hkt_research_image_PCMlattice_thumb.jpg,1
+Condensate shedding for tropical air conditioning,Materials for sustainable construction,Superhydrophobic coatings and dropwise condensation in air handlers,condensate-shedding.html,hkt_research_image_condensation_thumb.jpg,1
+Nanoimprint lithography process modeling,Contact mechanics in semiconductor manufacturing,"Pattern-dependent simulation, stamp design and resist flow",nanoimprint.html,hkt_research_image_3.jpg,1
+Exfoliation and transfer of two-dimensional materials,Contact mechanics in semiconductor manufacturing,Spatially multiplexed exfoliation of van der Waals solids,2d-exfoliation.html,hkt_research_image_2Dtransfer_thumb.jpg,1
+Simulation of chemical–mechanical planarization,Contact mechanics in semiconductor manufacturing,Die-scale modeling of pad–wafer contact,cmp.html,hkt_research_image_CMP_thumb.jpg,1
+Nanocaliper for thin-film rheology,Contact mechanics in semiconductor manufacturing,Wide-field imaging of evolving film thickness during nanoimprint,nanocaliper.html,hkt_research_image_nanocaliper_microlens.png,1
+Diffractive inline optical metrology,Earlier work in microsystems manufacturing,Diffractive monitoring of embossed and roll-to-roll patterns,diffractive-metrology.html,hkt_research_image_10.jpg,1
+Manufacturing of polymeric microfluidic devices,Earlier work in microsystems manufacturing,"Hot embossing, bonding and bond-toughness measurement",microfluidics-mfg.html,hkt_research_image_11.jpg,1
+Modeling of deep silicon plasma etch,Earlier work in microsystems manufacturing,Feature-to-wafer-scale simulation of deep reactive ion etch,etch.html,hkt_research_image_19.jpg,1
+CAL with low-modulus hydrogels,Volumetric additive manufacturing,,bioCAL.html,,0
+CAL for optical components,Volumetric additive manufacturing,,CAL-for-optics.html,,0
 3D micromolding for hydrogels,,,3DMM.html,,0
-GreenCAL: bio-based materials for tomographic 3D printing,Multiscale additive manufacturing,,,,0
-OptiCAL: characterization of engineering resins for tomographic 3D printing,Multiscale additive manufacturing,,,,0
-OpenCAL,Multiscale additive manufacturing,"Open-source CAL hardware and software for research, education and non-profit use",,,0
-Nascent and anticipated projects on CAL,Multiscale additive manufacturing,Microfluidic handling and closed-loop post-processing. Metals. Welcome proposals.,,,0
-HeliCAL: helical beam CAL for larger print volumes,Multiscale additive manufacturing,,nascent-anticipated-CAL.html,,0
-RecyCAL: evaluation of printable materials for a circular economy,Multiscale additive manufacturing,,,,0
-Three-dimensional holographic lithography (3DHL),Multiscale additive manufacturing,"Planar diffractive optics for rapid, low-cost, large-area 3D patterning of soft polymers",3DHL.html,hkt_research_image_24.jpg,1
-Optical coherence lithography (OCL),Multiscale additive manufacturing,,,,0
-Modeling bulk conductivity of nanowire-containing 3D printing filaments (compfilsim3d),Multiscale additive manufacturing,,,,0
-,,,,,
-Research theme: manufacturing and materials for sustainable construction,Manufacturing and materials for sustainable construction,Reinventing air conditioning and filtration for tropical and resource-limited environments,research-theme-energy.html,hkt_research_image_11.jpg,2
-Octet-truss engineered concrete (OTEC),Manufacturing and materials for sustainable construction,Porous centimeter-scale lattices with high specific strength and stiffness for building construction,OTEC.html,hkt_research_image_OTEC_thumb.jpg,1
-Polymer lattice-reinforced concrete,Manufacturing and materials for sustainable construction,Architected polymer lattices for ductile concrete,polymer-lattice-concrete.html,hkt_research_image_latticeconcrete_thumb.jpg,1
-Polymer-PCM lattice concrete,Manufacturing and materials for sustainable construction,Printed lattices that reinforce concrete and store heat,PCM-lattice-concrete.html,hkt_research_image_PCMlattice_thumb.jpg,1
-Superhydrophobic coating for air handlers,Manufacturing and materials for sustainable construction,Scalable water-shedding coatings for improving the efficiency of air-side heat exchangers,superhydrophobic.html,hkt_research_image_superhydrophobic_thumb.jpg,1
-Multiscale engineered surfaces for condensate shedding,Manufacturing and materials for sustainable construction,,,,0
-Condensate shedding for tropical air conditioning,Manufacturing and materials for sustainable construction,Separating latent and sensible heat removal in air handlers by controlling condensate shedding,condensate-shedding.html,hkt_research_image_condensation_thumb.jpg,1
-Breathing facades for low-cost cooling and dehumidification,Manufacturing and materials for sustainable construction,,breathing-facade.html,,0
-Bear Air: quantifying the cost of clean air,Manufacturing and materials for sustainable construction,,bear-air.html,,0
-,,,,,
-Contact mechanics in semiconductor manufacturing,Contact mechanics and nanomanufacturing,,research-theme-contact.html,hkt_research_image_10.jpg,0
-Nanoimprint lithography process modeling,Contact mechanics and nanomanufacturing,Rapidly simulating pattern dependences at the chip scale and larger,nanoimprint.html,hkt_research_image_3.jpg,1
-Mechanics of nanoimprint lithography,Contact mechanics and nanomanufacturing,"Stamp design, resist flow and demolding",nanoimprint-mechanics.html,hkt_research_image_NILmechanics_thumb.jpg,1
-Spatially multiplexed exfoliation and transfer of two-dimensional materials (COBEARS),Contact mechanics and nanomanufacturing,Spatially multiplexed exfoliation of van der Waals solids for manufacturing next-generation electronics,2d-exfoliation.html,hkt_research_image_2Dtransfer_thumb.jpg,1
-Systematic optical characterization of 2D materials (2dreflect),Contact mechanics and nanomanufacturing,,2dreflect.html,,0
-Simulation of chemical-mechanical planarization,Contact mechanics and nanomanufacturing,Chemical-mechanical planarization with additively manufactured polishing pads,cmp.html,hkt_research_image_CMP_thumb.jpg,1
-Optimizing patterned dry adhesives,Contact mechanics and nanomanufacturing,A rational framework for designing manufacturable dry adhesives,patterned-adhesives.html,hkt_research_image_4.jpg,1
-Improving pattern definition in micro-gravure printing,Contact mechanics and nanomanufacturing,Simulating imperfections in the ink transfer process,gravure.html,hkt_research_image_5.jpg,0
-Diffractive inline optical metrology,Contact mechanics and nanomanufacturing,Integrated diffractive optical elements for contact-free monitoring of roll-to-roll patterning processes,diffractive-metrology.html,hkt_research_image_10.jpg,1
-Nanocaliper for thin film rheology (nanovisc),Contact mechanics and nanomanufacturing,Wide-field imaging of evolving optical reflectivities during nanoimprint,nanocaliper.html,hkt_research_image_nanocaliper_microlens.png,1
-Manufacturing of polymeric microfluidic devices,Contact mechanics and nanomanufacturing,Micro-embossing and bonding of thermoplastics and characterization of the features produced,microfluidics-mfg.html,hkt_research_image_11.jpg,1
-Materials testing for microsystems fabrication,Contact mechanics and nanomanufacturing,Determining elastic moduli and bond strength,materials-testing.html,hkt_research_image_5.jpg,1
-Fast simulation of plastic film deformation (plasfilm),Contact mechanics and nanomanufacturing,,,,0
-Simulation of deep silicon plasma etch (adriene),Contact mechanics and nanomanufacturing,"Computationally inexpensive, feature-to-wafer-scale simulation of pattern and process dependences in deep reactive ion etch",etch.html,hkt_research_image_19.jpg,1
-,,,,,
+GreenCAL: bio-based materials for tomographic 3D printing,Volumetric additive manufacturing,,,,0
+OptiCAL: characterization of engineering resins for tomographic 3D printing,Volumetric additive manufacturing,,,,0
+OpenCAL,Volumetric additive manufacturing,"Open-source CAL hardware and software for research, education and non-profit use",,,0
+Nascent and anticipated projects on CAL,Volumetric additive manufacturing,Microfluidic handling and closed-loop post-processing. Metals. Welcome proposals.,,,0
+HeliCAL: helical beam CAL for larger print volumes,Volumetric additive manufacturing,,nascent-anticipated-CAL.html,,0
+RecyCAL: evaluation of printable materials for a circular economy,Volumetric additive manufacturing,,,,0
+Optical coherence lithography (OCL),Volumetric additive manufacturing,,,,0
+Modeling bulk conductivity of nanowire-containing 3D printing filaments (compfilsim3d),Volumetric additive manufacturing,,,,0
+Multiscale engineered surfaces for condensate shedding,Materials for sustainable construction,,,,0
+Breathing facades for low-cost cooling and dehumidification,Materials for sustainable construction,,breathing-facade.html,,0
+Bear Air: quantifying the cost of clean air,Materials for sustainable construction,,bear-air.html,,0
+Contact mechanics in semiconductor manufacturing,Contact mechanics in semiconductor manufacturing,,research-theme-contact.html,hkt_research_image_10.jpg,0
+Systematic optical characterization of 2D materials (2dreflect),Contact mechanics in semiconductor manufacturing,,2dreflect.html,,0
+Improving pattern definition in micro-gravure printing,Contact mechanics in semiconductor manufacturing,Simulating imperfections in the ink transfer process,gravure.html,hkt_research_image_5.jpg,0
+Fast simulation of plastic film deformation (plasfilm),Contact mechanics in semiconductor manufacturing,,,,0
 Education,Education,,,,0
 Microkit,Education,,,,0
 Engineering 29,Education,,,,0

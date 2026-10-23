@@ -1,0 +1,27 @@
+# Research themes, in the order they appear on the Research page.
+# Each theme shows three square images (240 x 240 recommended) and then the list of its topics
+# from _data/projects.csv (rows whose Theme matches the name exactly and whose Include? is 1).
+- name: Volumetric additive manufacturing
+  intro: "Computed axial lithography and related light-based methods that form whole objects at once, at length scales from micrometers to centimeters."
+  images:
+    - { src: hkt_research_image_CAL_thinker.png, link: computed-axial-lithography.html, alt: "A volumetrically printed model of Rodin’s Thinker" }
+    - { src: hkt_research_image_uCAL_thumb.png, link: microCAL.html, alt: "A silica glass microlattice printed by microscale CAL" }
+    - { src: hkt_research_image_spaceCAL_thumbnail.png, link: spaceCAL.html, alt: "The SpaceCAL payload on a parabolic flight" }
+- name: Materials for sustainable construction
+  intro: "Architected concrete–polymer composites, thermal storage in building envelopes, and surfaces for more efficient air conditioning."
+  images:
+    - { src: hkt_research_image_OTEC_thumb.jpg, link: OTEC.html, alt: "A cast octet-truss concrete unit cell" }
+    - { src: hkt_research_image_latticeconcrete_thumb.jpg, link: polymer-lattice-concrete.html, alt: "A polymer octet-truss lattice being 3D printed" }
+    - { src: hkt_research_image_superhydrophobic_thumb.jpg, link: condensate-shedding.html, alt: "A water droplet resting on a superhydrophobic coating" }
+- name: Contact mechanics in semiconductor manufacturing
+  intro: "Fast, physically grounded models of contact, flow and adhesion that set yield in nanoimprint, planarization and 2D-materials transfer."
+  images:
+    - { src: hkt_research_image_3.jpg, link: nanoimprint.html, alt: "Simulated residual-layer thickness in nanoimprint lithography" }
+    - { src: hkt_research_image_2Dtransfer_thumb.jpg, link: 2d-exfoliation.html, alt: "Arrays of exfoliated WS2 monolayer features" }
+    - { src: hkt_research_image_nanocaliper_microlens.png, link: nanocaliper.html, alt: "Interference fringes used to measure a thin polymer film" }
+- name: Earlier work in microsystems manufacturing
+  intro: "Process modeling and metrology for plasma etching, hot embossing and bonding of polymer microfluidic devices."
+  images:
+    - { src: hkt_research_image_19.jpg, link: etch.html, alt: "Silicon microstructures produced by deep reactive ion etching" }
+    - { src: hkt_research_image_11.jpg, link: microfluidics-mfg.html, alt: "Hot-embossed polymer microchannels" }
+    - { src: hkt_research_image_10.jpg, link: diffractive-metrology.html, alt: "An embossed diffractive test pattern" }

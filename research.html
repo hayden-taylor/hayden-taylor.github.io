@@ -1,18 +1,24 @@
 ---
 layout: default
 title: "Design for Emerging and Nanoscale Manufacturing: Research"
-description: "Research projects of the Design for Emerging and Nanoscale Manufacturing group at UC Berkeley."
+description: "Research themes and projects of the Design for Emerging and Nanoscale Manufacturing group at UC Berkeley."
 panel_title: "Design for Emerging<br>and Nanoscale<br>Manufacturing:<br>Research"
 ---
-{% comment %}Tiles come from _data/projects.csv: set a row's Include? column to 1 to show it.{% endcomment %}
+{% comment %}
+Themes and their three images come from _data/themes.yml. Topics come from _data/projects.csv:
+a row is listed under the theme named in its Theme column when Include? is 1, in the order of the rows.
+The banner editor in tools/ can change the order and the theme of each topic.
+{% endcomment %}
 {% assign projects = site.data.projects | where: "Include?", "1" %}
-<ul class="tiles">
-  {% for p in projects %}
-  <li>
-    <a class="tile" href="{{ p['Source file'] | prepend: '/' | relative_url }}">
-      <img src="{{ p['Thumbnail image'] | prepend: '/images/' | relative_url }}" width="240" height="240" alt="" loading="lazy">
-      <span class="tile-caption">{{ p['Project title'] }}</span>
-    </a>
-  </li>
-  {% endfor %}
-</ul>
+{% for t in site.data.themes %}
+<section class="theme" aria-labelledby="theme-{{ forloop.index }}">
+  <div class="theme-images">
+    {% for im in t.images %}<a href="{{ im.link | prepend: '/' | relative_url }}" tabindex="-1" aria-hidden="true"><img src="{{ im.src | prepend: '/images/' | relative_url }}" width="240" height="240" alt="" loading="lazy"></a>{% endfor %}
+  </div>
+  <h2 id="theme-{{ forloop.index }}">{{ t.name }}</h2>
+  <p class="theme-intro">{{ t.intro }}</p>
+  <ul class="topic-list">
+    {% for p in projects %}{% if p.Theme == t.name %}<li><a href="{{ p['Source file'] | prepend: '/' | relative_url }}">{{ p['Project title'] }}</a></li>{% endif %}{% endfor %}
+  </ul>
+</section>
+{% endfor %}

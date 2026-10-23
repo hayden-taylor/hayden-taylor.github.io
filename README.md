@@ -20,6 +20,13 @@ This folder is a Jekyll version of the PHP site in the parent `online` folder, r
    - `A` records for the bare domain: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    Then tick "Enforce HTTPS". Optionally, put a redirect from the old OCF address to the new one in the PHP `index.php`.
 
+## Research page and banners
+
+- **Themes** (headings, intro sentence and three square images on the Research page) are in `_data/themes.yml`.
+- **Topics** are rows of `_data/projects.csv`: a row appears under the theme named in its `Theme` column when `Include?` is 1, in row order. The Previous/Next links on topic pages follow the same order.
+- **Banner and order editor:** double-click `tools/banner_editor.bat` (or run `python tools/banner_editor.py` from this folder). It opens a page in your browser where you can choose a page, move images from `images/` into or out of its banner, reorder them and save, and, on the second tab, reorder topics, change their theme and show or hide them. Banner images are 240, 480 or 720 pixels wide and should add up to 720. Commit and push the changed files afterwards as usual.
+- People and Publications use folding sections (`<details class="fold">`); add `open` to a section to have it start unfolded.
+
 ## Editing
 
 - **Text on a page:** edit the corresponding `.html` file below the front matter.
