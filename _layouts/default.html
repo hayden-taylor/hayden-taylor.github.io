@@ -18,7 +18,7 @@
     {% if page.banner %}
     <div class="banner">
       {% for b in page.banner %}
-        {% if b.type == "video" %}
+        {% if b.type == "video" or b.src contains ".mp4" or b.src contains ".webm" %}
         <video src="{{ b.src | relative_url }}" width="{{ b.width }}" height="240" style="width: {{ b.width | times: 100.0 | divided_by: 720 }}%" autoplay muted loop playsinline controls aria-label="Banner video"></video>
         {% else %}
         <img src="{{ b.src | relative_url }}" width="{{ b.width }}" height="240" style="width: {{ b.width | times: 100.0 | divided_by: 720 }}%" alt="">
