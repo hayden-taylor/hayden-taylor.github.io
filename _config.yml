@@ -4,7 +4,7 @@ author: "Hayden Taylor"
 lang: en
 # For a custom domain (e.g. https://www.haydentaylor.org) leave baseurl empty.
 # For a project site at https://<user>.github.io/<repo>/ set baseurl: "/<repo>".
-url: ""
+url: "https://haydentaylor.org"
 baseurl: ""
 markdown: kramdown
 exclude:
