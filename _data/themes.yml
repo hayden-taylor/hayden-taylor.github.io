@@ -14,7 +14,7 @@
     - { src: hkt_research_image_latticeconcrete_thumb.jpg, link: polymer-lattice-concrete.html, alt: "A polymer octet-truss lattice being 3D printed" }
     - { src: hkt_research_image_superhydrophobic_thumb.jpg, link: condensate-shedding.html, alt: "A water droplet resting on a superhydrophobic coating" }
 - name: Contact mechanics in semiconductor manufacturing
-  intro: "Fast, physically grounded models of contact, flow and adhesion that set yield in nanoimprint, planarization and 2D-materials transfer."
+  intro: "Fast, physically grounded models of contact, flow and adhesion that determine process yield in nanoimprint, planarization and 2D-materials transfer."
   images:
     - { src: hkt_research_image_3.jpg, link: nanoimprint.html, alt: "Simulated residual-layer thickness in nanoimprint lithography" }
     - { src: hkt_research_image_2Dtransfer_thumb.jpg, link: 2d-exfoliation.html, alt: "Arrays of exfoliated WS2 monolayer features" }
