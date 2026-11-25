@@ -10,9 +10,9 @@
 - name: Materials for sustainable construction
   intro: "Architected concrete–polymer composites, thermal storage in building envelopes, and surfaces for more efficient air conditioning."
   images:
-    - { src: hkt_research_image_OTEC_thumb.jpg, link: OTEC.html, alt: "A cast octet-truss concrete unit cell" }
-    - { src: hkt_research_image_latticeconcrete_thumb.jpg, link: polymer-lattice-concrete.html, alt: "A polymer octet-truss lattice being 3D printed" }
-    - { src: hkt_research_image_superhydrophobic_thumb.jpg, link: condensate-shedding.html, alt: "A water droplet resting on a superhydrophobic coating" }
+    - { src: hkt_research_image_latticeconcrete_print.jpg, link: polymer-lattice-concrete.html, alt: "A polymer octet-truss lattice being 3D printed" }
+    - { src: hkt_research_image_latticeconcrete_cast.jpg, link: polymer-lattice-concrete.html, alt: "Mortar being cast around a printed polymer lattice" }
+    - { src: hkt_research_image_latticeconcrete_DIC.jpg, link: polymer-lattice-concrete.html, alt: "Strain map from digital image correlation of a lattice-reinforced beam in bending" }
 - name: Contact mechanics in semiconductor manufacturing
   intro: "Fast, physically grounded models of contact, flow and adhesion that determine process yield in nanoimprint, planarization and 2D-materials transfer."
   images:
